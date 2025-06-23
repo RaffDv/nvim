@@ -10,7 +10,4 @@ map("n", "<C-u>", "<C-u>zz") -- move up and centralize
 map("n", "<C-d>", "<C-d>zz") -- move down and centralize
 
 map("i", "jk", "<ESC>") -- enter on normal mode
-
-vim.keymap.set("n", "<leader>rn", function()
-  return ":IncRename " .. vim.fn.expand("<cword>")
-end, { expr = true })
+map("n", ";", ":") -- open command whitout shift
