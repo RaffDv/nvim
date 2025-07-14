@@ -38,11 +38,10 @@ return {
       },
     },
     opts = {
-      -- Mostra o "blame" da linha atual de forma virtual (sem alterar o texto)
       current_line_blame = true,
       current_line_blame_opts = {
         virt_text = true,
-        virt_text_pos = "eol", -- 'eol' (end of line) or 'overlay'
+        virt_text_pos = "eol",
         delay = 500,
         ignore_whitespace = false,
       },
@@ -70,6 +69,16 @@ return {
         "<leader>gh",
         "<cmd>DiffviewFileHistory %<CR>",
         desc = "Git File History",
+      },
+    },
+    opts = {
+      view = {
+        default = {
+          layout = "split",
+        },
+        merge_tool = {
+          layout = "diff3_split",
+        },
       },
     },
   },
