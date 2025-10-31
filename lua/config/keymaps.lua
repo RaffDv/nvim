@@ -11,3 +11,6 @@ map("n", "<C-d>", "<C-d>zz") -- move down and centralize
 
 map("i", "jk", "<ESC>") -- enter on normal mode
 map("n", ";", ":") -- open command whitout shift
+
+map("n", "<C-M-k>", "<cmd>lua require('multicursors').add_cursor_up()<CR>", { desc = "Add cursor up" })
+map("n", "<C-M-j>", "<cmd>lua require('multicursors').add_cursor_down()<CR>", { desc = "Add cursor down" })
